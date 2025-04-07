@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/loans")
+      .get("https://gat-hafta.onrender.com/loans")
       .then((res) => setLoans(res.data))
       .catch((err) => console.error(err));
   }, []);

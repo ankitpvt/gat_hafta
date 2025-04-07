@@ -18,7 +18,7 @@ app.use(express.json());
 const _dirname = path.resolve();
 
 const corsOptions = {
-    origin: 'https:localhost:3000', // Allow requests from this origin
+    origin: 'https://gat-hafta.onrender.com', // Allow requests from this origin
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allowed HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
     credentials: true, // Allow cookies to be sent

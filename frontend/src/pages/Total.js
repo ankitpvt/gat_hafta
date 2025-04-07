@@ -14,7 +14,7 @@ const Total = () => {
 
   const fetchTotals = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/total");
+      const res = await axios.get("https://gat-hafta.onrender.com/total");
       setLoanList(res.data);
     } catch (err) {
       console.error("Error fetching totals:", err.response?.data || err.message);
@@ -28,7 +28,7 @@ const Total = () => {
     }
 
     try {
-      await axios.post("http://localhost:5000/total", {
+      await axios.post("https://gat-hafta.onrender.com/total", {
         totals: parseFloat(totalAmount),
         remain: parseFloat(remainingAmount),
         date,
@@ -44,7 +44,7 @@ const Total = () => {
 
   const deleteTotal = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/total/${id}`);
+      await axios.delete(`https://gat-hafta.onrender.com/total/${id}`);
       setLoanList(loanList.filter((loan) => loan._id !== id));
     } catch (err) {
       console.error("Error deleting total:", err.response?.data || err.message);

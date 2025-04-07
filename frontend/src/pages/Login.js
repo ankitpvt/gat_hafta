@@ -10,7 +10,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/admin/login", { username, password });
+      const res = await axios.post("https://gat-hafta.onrender.com/admin/login", { username, password });
       localStorage.setItem("token", res.data.token);
       navigate("/admin");
     } catch (error) {

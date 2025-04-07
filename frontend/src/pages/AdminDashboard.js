@@ -15,7 +15,7 @@ const AdminDashboard = () => {
 
   const fetchLoans = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/loans");
+      const res = await axios.get("https://gat-hafta.onrender.com/loans");
       setLoans(res.data);
     } catch (err) {
       console.error("Error fetching loans:", err.response?.data || err.message);
@@ -29,7 +29,7 @@ const AdminDashboard = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:5000/loans", {
+      const res = await axios.post("https://gat-hafta.onrender.com/loans", {
         user,
         amount: parseFloat(amount),
         interest: parseFloat(interest),
@@ -48,7 +48,7 @@ const AdminDashboard = () => {
 
   const deleteLoan = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/loans/${id}`);
+      await axios.delete(`https://gat-hafta.onrender.com/loans/${id}`);
       setLoans(loans.filter((loan) => loan._id !== id));
     } catch (err) {
       console.error("Error deleting loan:", err.response?.data || err.message);

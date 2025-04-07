@@ -9,7 +9,7 @@ const SignUp = () => {
 
   const handleSignUp = async () => {
     try {
-      await axios.post("http://localhost:5000/admin/register", { username, password });
+      await axios.post("https://gat-hafta.onrender.com/admin/register", { username, password });
       alert("Admin registered successfully! You can now log in.");
       navigate("/");
     } catch (error) {
