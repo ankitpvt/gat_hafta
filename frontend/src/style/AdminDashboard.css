@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  /* Main Container */
+  .admin-container {
+    max-width: 480px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Titles */
+  .admin-title {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+  }
+  
+  .section-heading {
+    font-size: 1.2rem;
+    margin: 15px 0 10px;
+    color: #333;
+  }
+  
+  /* Form Styling */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+  }
+  
+  .input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .add-btn {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .add-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-btn {
+    background-color: #ff4d4f;
+    color: #fff;
+  }
+  
+  .delete-btn:hover {
+    background-color: #d9363e;
+  }
+  
+  .home-btn {
+    margin-top: 20px;
+    background-color: #28a745;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .home-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Table Styling */
+  .loan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .loan-table th,
+  .loan-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  
+  .loan-table th {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .loan-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .admin-title {
+      font-size: 1.4rem;
+    }
+  
+    .section-heading {
+      font-size: 1.1rem;
+    }
+  
+    .input,
+    .btn {
+      font-size: 0.95rem;
+    }
+  
+    .loan-table th,
+    .loan-table td {
+      font-size: 0.85rem;
+      padding: 8px;
+    }
+  }
+  

@@ -1,0 +1,98 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  /* Container */
+  .loan-container {
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    color: #333;
+  }
+  
+  /* Title */
+  .loan-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+  }
+  
+  /* Form */
+  .loan-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+  
+  .loan-input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  .loan-input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Button */
+  .loan-btn {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .loan-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Result */
+  .loan-result {
+    background-color: #e9f5ff;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #1a1a1a;
+  }
+  
+  .loan-result h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #007bff;
+  }
+  
+  .loan-result p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .loan-title {
+      font-size: 1.3rem;
+    }
+  
+    .loan-btn {
+      font-size: 0.95rem;
+    }
+  
+    .loan-result {
+      font-size: 0.95rem;
+    }
+  }
+  

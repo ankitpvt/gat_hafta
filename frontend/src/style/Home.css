@@ -1,0 +1,115 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background-color: #f2f4f7;
+    color: #333;
+    padding: 10px;
+  }
+  
+  /* Main container */
+  .home-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Titles */
+  .home-title {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .home-subtitle {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Buttons */
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .btn {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table */
+  .record-heading {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #1a1a1a;
+  }
+  
+  .loan-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+  
+  .loan-table thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .loan-table th,
+  .loan-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .loan-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 480px) {
+    .home-title {
+      font-size: 1.3rem;
+    }
+  
+    .home-subtitle {
+      font-size: 0.95rem;
+    }
+  
+    .loan-table th,
+    .loan-table td {
+      font-size: 0.85rem;
+      padding: 8px;
+    }
+  
+    .btn {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+  }
+  
